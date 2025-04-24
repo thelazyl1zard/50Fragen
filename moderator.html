@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Moderator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="question-box">
+    <h1 id="question">Drücke "Nächste Frage"</h1>
+    <button id="next-btn">Nächste Frage</button>
+  </div>
+  <div class="scoreboard">
+    <div class="player" id="p1">Player 1: <span>0</span> <button onclick="addPoint(1)">+1</button></div>
+    <div class="player" id="p2">Player 2: <span>0</span> <button onclick="addPoint(2)">+1</button></div>
+    <div class="player" id="p3">Player 3: <span>0</span> <button onclick="addPoint(3)">+1</button></div>
+    <div class="player" id="p4">Player 4: <span>0</span> <button onclick="addPoint(4)">+1</button></div>
+  </div>
+  <div class="buzzer-box">
+    <h2>Buzzer gedrückt:</h2>
+    <p id="buzzer-display">Niemand</p>
+  </div>
+  <script type="module" src="script.js"></script>
+  <script>initGame(true);</script>
+</body>
+</html>
